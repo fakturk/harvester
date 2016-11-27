@@ -10,6 +10,7 @@ import java.util.Date;
 public class OaiRecord {
 
     public OaiRecord(CreateOaiRecordDao createOaiRecordDao) {
+        this.id = createOaiRecordDao.getId();
         this.url = createOaiRecordDao.getURL();
         this.token = createOaiRecordDao.getToken();
         this.responseDate = createOaiRecordDao.getResponseDate();

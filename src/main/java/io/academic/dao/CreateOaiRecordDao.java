@@ -9,6 +9,10 @@ public class CreateOaiRecordDao {
     public CreateOaiRecordDao(){
     }
 
+
+    @NotBlank
+    private Long id;
+
     @NotBlank
     private String url;
 
@@ -43,5 +47,9 @@ public class CreateOaiRecordDao {
 
     public String getState() {
         return state;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
