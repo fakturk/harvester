@@ -23,6 +23,8 @@ public class CreateOaiRecordDao {
     @NotBlank
     private String state;
 
+
+
     public String getURL() {
         return url;
     }
