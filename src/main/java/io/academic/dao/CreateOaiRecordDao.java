@@ -6,12 +6,8 @@ import java.util.Date;
 
 public class CreateOaiRecordDao {
 
-    public CreateOaiRecordDao(){
+    public CreateOaiRecordDao() {
     }
-
-
-    @NotBlank
-    private Long id;
 
     @NotBlank
     private String url;
@@ -21,13 +17,15 @@ public class CreateOaiRecordDao {
 
     private Date responseDate;
 
+    private String identifier;
+
+    private String datestamp;
+
     @NotBlank
     private String record;
 
     @NotBlank
     private String state;
-
-
 
     public String getURL() {
         return url;
@@ -49,7 +47,11 @@ public class CreateOaiRecordDao {
         return state;
     }
 
-    public Long getId() {
-        return id;
+    public String getIdentifier() {
+        return identifier;
+    }
+
+    public String getDatestamp() {
+        return datestamp;
     }
 }
